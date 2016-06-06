@@ -1,0 +1,368 @@
+.main-content
+	position: relative
+	overflow: hidden
+	font-size: 0
+	line-height: 0
+	&:before
+		content: ""
+		width: 100%
+		height: 100%
+		background: rgba(#000, 0.5) 
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+	.banner-img
+		margin-left: -100%
+		width: 300%
+		
+		img
+			min-width: 1/3*100%
+			margin: auto
+			display: block
+	.wrapper	
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		&:before
+			content: ""
+			display: inline-block
+			width: 0
+			height: 100%
+			vertical-align: middle
+	.banner
+		display: inline-block
+		vertical-align: middle
+		z-index: 15
+		h3
+			font-size: 60px
+			line-height: 70px
+			color: #fff
+			letter-spacing: 2.3px
+			+breakpoint(900px)
+				font-size: 30px
+				line-height: 32px
+			strong
+				display: block
+				font-weight: 700
+				font-size: 72px
+				line-height: 74px
+				color: #fff
+				margin-top: 9px
+				letter-spacing: 2.8px
+				+breakpoint(900px)
+					font-size: 32px
+					line-height: 34px
+
+.task
+	+clearfix
+	padding-top: 87px
+	+breakpoint(767px)
+		padding-top: 30px
+	.task-phone
+		float: left
+		width: 580/1180*100%
+		+box-sizing(border-box)
+		+breakpoint(767px)
+			float: none 
+			display: block
+			width: 100%
+			margin-bottom: 20px
+		img
+			width: 100%
+			display: block 
+			+breakpoint(767px)
+				max-width: 100%
+				width: auto
+				margin: auto
+	.task-container
+		float: right
+		width: 580/1180*100%
+		+box-sizing(border-box)
+		color: #1c1e20
+		padding-left: 13px
+		+breakpoint(767px)
+			float: none 
+			display: block
+			width: 100%
+			padding-left: 0
+		.task-container-img
+			+clearfix
+			margin-top: 19px
+			margin-bottom: 20px
+			img 
+				float: left
+				&:nth-child(2)
+					margin-left: 75px
+					margin-top: 14px
+			+breakpoint(1150px)
+				margin: 00px 
+				img 
+					float: none
+					display: block
+					margin: auto !important
+					margin-bottom: 20px
+		h5
+			font-size: 36px
+			line-height: 40px
+			margin-top: 48px
+			letter-spacing: 2.2px
+			margin-bottom: 16px
+			+breakpoint(1024px)
+				margin-top: 10px
+				margin-bottom: 0
+
+		p 
+			font-size: 18px
+			line-height: 22px
+			padding-top: 22px
+			line-height: 22px
+			letter-spacing: 1.1px
+			+breakpoint(1024px)
+				padding-top: 10px
+		a 
+			background: #ffdd22
+			color: #1c1e20
+			font-size: 24px
+			line-height: 22px
+			margin-top: 65px
+			padding: 18px 35px 15px 36px
+			letter-spacing: 1.4px
+			display: inline-block
+			+border-radius(4px)
+			+transition(0.2s)
+			&:hover
+				color: #ffdd22
+				background: #1c1e20
+			+breakpoint(1024px)
+				margin-top: 10px
+.swiper
+	background: image-url("bg-top.jpg") left top no-repeat
+	padding-bottom: 75px
+	margin-top: 190px
+	+breakpoint(767px)
+		margin-top: 20px
+		padding-bottom: 0
+	h4 
+		font-size: 36px
+		line-height: 40px
+		color: #1c1e20
+		display: block
+		text-align: center
+		letter-spacing: 2.1px
+		margin-left: 18px
+		padding: 87px 0 39px
+		+breakpoint(1024px)
+			margin-left: 0
+		+breakpoint(767px)
+			padding: 40px 0 15px
+			font-size: 24px
+			line-height: 26px
+	.wrapper
+		padding: 0 80px
+		+breakpoint(767px)
+			padding: 0 20px
+	.swiper-slide
+		padding: 4% 11.6% 85px
+		+box-sizing(border-box)
+	.swiper-slide-active
+		text-align: center
+		img 
+			position: relative
+			z-index: 12
+			max-width: 100%
+			width: 100%
+			text-align: center
+		+breakpoint(1200px)
+			margin-right: 0
+	
+	.swiper-button-prev
+		+breakpoint(1024px)
+			top: 38%
+		+breakpoint(767px)
+			background-size: 55%
+			left: -10px
+			+opacity(1)
+		+breakpoint(469px)
+			top: 30%
+	.swiper-button-next
+		+breakpoint(1024px)
+			top: 38%
+		+breakpoint(767px)
+			right: -10px
+			background-size: 55%
+		+breakpoint(469px)
+			top: 30%
+.ten-page
+	text-align: center
+	img 
+		margin-top: 65px
+		margin-left: 16px
+	h3
+		font-size: 48px
+		line-height: 48px
+		color: #1c1e20
+		display: inline-block
+		text-align: center
+		margin-top: 27px
+		letter-spacing: 2.8px
+		margin-left: 20px
+		+breakpoint(767px)
+			font-size: 30px
+			line-height: 30px
+			margin-left: 0
+			letter-spacing: 1px
+			margin-top: 20px
+		&:after
+			content: ""
+			widows: 100%
+			height: 2px
+			+box-sizing(border-box)
+			margin: 24px 152px 10px
+			display: block
+			background: #fd2
+			+breakpoint(767px)
+				margin: 20px 
+
+
+.all-devices
+	color: #1c1e20
+	+clearfix
+	background: image-url("bg-bottom.jpg") 0 0 no-repeat
+	padding-bottom: 50px
+	.devices-img
+		width: 580/1180*100%
+		float: left
+		text-align: center
+		position: relative
+		+clearfix
+		margin-top: 24.44407%
+		background: image-url("iphone.png") 12px 100px no-repeat
+		background-size: 250/580*100%
+		+breakpoint(767px)
+			background-position: left center
+			float: none
+			display: block
+			margin-top: 70px
+			width: 100%
+	.devices-img-container
+		width: 492/580*100%
+		float: right
+		+pie-clearfix
+		background: image-url("iphone6.png") center top no-repeat
+		background-size: 100%	
+		padding: 90/580*100% 83/580*100% 130/580*100% 65/580*100%
+		margin-right: 3%
+		+box-sizing(border-box)	
+		+breakpoint(767px)
+		img 
+			display: none
+			+opacity(0)
+			+transition(0.3s)
+			width: 100%
+			&.active
+				display: block
+				+opacity(1)
+	.devices-text
+		width: 600/1180*100%
+		float: right
+		margin-top: 39.18983%
+		position: relative
+		+box-sizing(border-box)
+		padding-left: 12px
+		+breakpoint(767px)
+			float: none
+			margin-top: 20px
+			display: block
+			width: 100%
+			padding-left: 0
+		p 
+			font-size: 30px
+			line-height: 32px
+			display: inline-block
+			letter-spacing: 1.8px
+			+breakpoint(1150px)
+				font-size: 25px
+				line-height: 26px
+			+breakpoint(767px)
+				font-size: 20px
+				line-height: 24px
+
+		strong
+			font-size: 48px
+			line-height: 50px
+			display: block
+			text-transform: uppercase
+			margin-top: 12px
+			font-weight: 700
+			letter-spacing: 2.6px
+			+breakpoint(1150px)
+				font-size: 36px
+				line-height: 38px
+			+breakpoint(767px)
+				font-size: 24px
+				line-height: 26px
+					
+			span
+				text-transform: initial
+				font-weight: 400
+				margin-left: 18px
+				+breakpoint(1024px)
+					margin-left: 0
+				
+
+		.devaces-text-mobile-version
+			font-size: 18px
+			line-height: 30px
+			display: block
+			letter-spacing: 1.1px
+			margin-top: 41px
+			padding-right: 71px
+			+box-sizing(border-box)
+			+breakpoint(767px)
+				margin: 0
+				margin-top: 10px
+				padding-right: 0
+		.tabs
+			margin-top: 138/600*100%
+			font-size: 0
+			line-height: 0
+			a 
+				color: #1c1e20
+				+opacity(0.63)
+				font-size: 30px
+				line-height: 32px
+				margin-top: 40px
+				width: 290/580*100%
+				display: inline-block
+				letter-spacing: 1.9px
+				vertical-align: top
+				+box-sizing(border-box)
+				&:nth-child(2n+2)
+					padding-left: 35px
+				&.active 
+					+opacity(1)
+			+breakpoint(1150px)
+				a 
+					font-size: 24px
+					line-height: 26px
+			+breakpoint(1024px)
+				margin-top: 00px
+				a 
+					font-size: 20px
+					margin-top: 20px
+			+breakpoint(767px)
+				margin-top: 0px
+		.t-desktop
+			+breakpoint(767px)
+				display: none
+		.t-mobile 
+			display: none
+			padding-bottom: 40px
+			+breakpoint(767px)
+				display: block
+
+
+
